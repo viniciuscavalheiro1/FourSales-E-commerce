@@ -31,6 +31,8 @@ Infelizmente não tive tanto tempo como queria para desenvolver de uma forma mai
 - Swagger (OpenAPI 3)
 - MapStruct
 - Lombok
+- Junit
+- Mockito
 
 ---
 
@@ -55,5 +57,7 @@ Infelizmente não tive tanto tempo como queria para desenvolver de uma forma mai
 
 O arquivo ```FourSales E-commerce API.postman_collection.json``` na raiz do projeto contem todas as collections para importar no postman. Basta importar e começar testar a API
 
+### Ainda deu para fazer alguns testes com Junit e Mockito
 
+![img.png](img.png)
 
