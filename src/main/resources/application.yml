@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: Str0ngP@ssw0rd!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.jdbc.time_zone: UTC
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+jwt:
+  secret: U0VDUkVUX1NFTlNSSU9fQmFzZTY0X1NFQ1JFVFNfMzJfQnl0ZXM
+  expiration: 3600000
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    br.com.foursales: DEBUG
+
+# Configuração de email (opcional, para envio de token de reset de senha)
+# spring:
+#   mail:
+#     host: smtp.seuprovedor.com
+#     port: 587
+#     username: seu-usuario
+#     password: sua-senha
+#     properties:
+#       mail:
+#         smtp:
+#           auth: true
+#           starttls:
+#             enable: true
